@@ -2,7 +2,7 @@
 	"name": "pwesterdale/openingtimes",
 	"description": "Opening Times manager for bookings system.",
 	"keywords": [
-		"bookings",
+		"bookings"
 	],
 	"homepage": "http://thisis.pw",
 	"license": "MIT",
@@ -17,7 +17,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"OpeningTimes\\": ["src"]
+			"OT\\": ["src"]
 		}
 	},
 	"extra": {
