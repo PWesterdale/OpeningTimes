@@ -49,6 +49,27 @@ class Calendar {
 		return $this;
 	}
 
+	public function getTimeSlots(){
+		$slots = [];
+		foreach($this->_rawCalendar as $date => $data){
+			foreach($data['hours'] as $serving => $hours){
+				//var_dump(($data['date']->getTimestamp() + $hours['start']), ($data['date']->getTimestamp() + $hours['end']));
+				$slotTimes = new DatePeriod(
+					new DateTime('@'.($data['date']->getTimestamp() + $hours['start'])),
+					new DateInterval('PT'.$this->_slotPeriod.'S'),
+					new DateTime('@'.($data['date']->getTimestamp() + $hours['end']))
+				);
+
+				foreach($slotTimes as $time){
+					$slots[$time->getTimestamp()] = [];
+				}
+				
+			}
+		}
+
+		return $slots;
+	}
+
 	public function getDailyTimes(){
 		$calendar = [];
 		foreach($this->_rawCalendar as $date => $data){

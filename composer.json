@@ -1,0 +1,25 @@
+{
+	"name": "pwesterdale/openingtimes",
+	"description": "Opening Times manager for bookings system.",
+	"keywords": [
+		"bookings",
+	],
+	"homepage": "http://thisis.pw",
+	"license": "MIT",
+	"authors" : [
+		{
+			"name": "Paul Westerdale",
+			"email": "paul@westerdale.me",
+			"role": "Developer"
+		}
+	],
+	"require": {
+	},
+	"autoload": {
+		"psr-4": {
+			"OpeningTimes\\": ["src"]
+		}
+	},
+	"extra": {
+	}
+}
