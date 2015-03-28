@@ -1,10 +1,11 @@
 <?
 
-namespace OpeningTimes;
+namespace Reservat;
+
 use DatePeriod;
 use DateTime;
 use DateInterval;
-use OpeningTimes\OverrideFactory;
+use Reservat\OverrideFactory;
 
 class Calendar {
 

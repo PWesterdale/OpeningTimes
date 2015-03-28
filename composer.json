@@ -1,23 +1,21 @@
 {
-	"name": "pwesterdale/openingtimes",
-	"description": "Opening Times manager for bookings system.",
-	"keywords": [
-		"bookings"
-	],
+	"name": "reservat/openingtimes",
+	"description": "Opening Times module for reservat",
 	"homepage": "http://thisis.pw",
 	"license": "MIT",
 	"authors" : [
 		{
 			"name": "Paul Westerdale",
-			"email": "paul@westerdale.me",
+			"email": "paul@threadstud.io",
 			"role": "Developer"
 		}
 	],
 	"require": {
-	},
+        "reservat/core": "dev-master"
+    },
 	"autoload": {
 		"psr-4": {
-			"OpeningTimes\\": ["src/openingtimes/"]
+			"Reservat\\": ["src/reservat/"]
 		}
 	},
 	"extra": {

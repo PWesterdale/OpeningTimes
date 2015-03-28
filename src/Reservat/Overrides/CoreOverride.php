@@ -1,6 +1,6 @@
 <?
 
-namespace OpeningTimes\Overrides;
+namespace Reservat\Overrides;
 
 class CoreOverride {
 

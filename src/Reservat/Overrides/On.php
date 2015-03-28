@@ -1,8 +1,8 @@
 <?
 
-namespace OpeningTimes\Overrides;
+namespace Reservat\Overrides;
 
-use OpeningTimes\Overrides\OverrideInterface;
+use Reservat\Overrides\OverrideInterface;
 
 class On extends CoreOverride implements OverrideInterface {
 

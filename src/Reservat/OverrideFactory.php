@@ -1,6 +1,6 @@
 <?
 
-namespace OpeningTimes;
+namespace Reservat;
 
 class OverrideFactory {
 
